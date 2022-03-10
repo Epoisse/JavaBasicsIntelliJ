@@ -1,4 +1,4 @@
-package com.syntax.homework;
+package com.syntax.replit;
 
 public class Replit137 {
     private String name;

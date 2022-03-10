@@ -1,4 +1,4 @@
-package com.syntax.homework;
+package com.syntax.replit;
 
 import java.util.Arrays;
 

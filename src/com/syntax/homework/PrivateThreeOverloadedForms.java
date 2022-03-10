@@ -1,14 +1,16 @@
 package com.syntax.homework;
 
 public class PrivateThreeOverloadedForms {
-    private void printPrivateMethod () {
+    private void printPrivateMethod() {
         System.out.println("Printing private method without any parameters");
     }
-    private void printPrivateMethod (String textOne) {
-        System.out.println("Printing private method without any parameters plus text: "+textOne);
+
+    private void printPrivateMethod(String textOne) {
+        System.out.println("Printing private method without any parameters plus text: " + textOne);
     }
-    private void printPrivateMethod (String textOne, String textTwo) {
-        System.out.println("Printing private method without any parameters plus concat of two strings:"+textOne+" and "+textTwo);
+
+    private void printPrivateMethod(String textOne, String textTwo) {
+        System.out.println("Printing private method without any parameters plus concat of two strings:" + textOne + " and " + textTwo);
     }
 
     public static void main(String[] args) {
