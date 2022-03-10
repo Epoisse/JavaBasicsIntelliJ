@@ -1,0 +1,10 @@
+
+Constructors
+
+ allows us to set the values of the fields of a class.
+
+Rule 1 Constructors don't have return types
+Rule 2 name of the constructor should be same as name of the class
+
+The constructor that is provided automatically when we don't create any constructors in class
+is called default constructor

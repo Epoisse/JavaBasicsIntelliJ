@@ -1,0 +1,18 @@
+
+
+Access Modifiers in Java:
+restriction levels:
+1) Private
+2) Default
+3) Protected
+4) Public
+
+Rules:
+1) we should always prefer private access modifier for the fields. Because fields contain the data
+and the methods of your class might use that data to perform some tasks if we don't perform
+sanity checks before setting the values to these fields our classes and methods might
+misbehave also the access of the data should be restricted so that not every one can access
+the data.
+2) we can't use access modifiers with local variables
+
+make methods public and variables private!
