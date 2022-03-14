@@ -1,0 +1,9 @@
+
+
+
+
+OOPS Main pillars;
+1) Inheritance (code reusability)
+2) Polymorphism (less code, dynamic behavior)
+3) Abstraction (
+4) Encapsulating
