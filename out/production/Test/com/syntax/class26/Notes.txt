@@ -1,0 +1,5 @@
+
+Encapsulation:
+it is the fourth pillar of OOPS. it provides security and better control over the data of a class.
+We create classes and inside those classes we create private fields and methods. These methods are called getter/setter
+methods. And we set and get the values of the class fields with help of these mehtods instead of accessing and modifying
