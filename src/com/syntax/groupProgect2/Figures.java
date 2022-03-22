@@ -1,35 +1,31 @@
 package com.syntax.groupProgect2;
 
-import java.lang.Math.*;
-
-interface Shape {
-    double calculateArea();
-
-    double calculatePerimeter();
-}
-
+// Parent class for all types of figures
 public class Figures implements Shape {
-    @Override
-    public double calculateArea() {
-        return 0;
-    }
-
-    @Override
-    public double calculatePerimeter() {
-        return 0;
-    }
 
     public static void main(String[] args) {
         Figures[] array = {new Circle(5), new Square(2)};
         for (Figures a : array
         ) {
             System.out.println(a.calculateArea());
-            System.out.println(a.calculatePerimeter());
+            System.out.printf("%.2f%n", a.calculatePerimeter());
         }
+    }
+
+    // Method returns String with remark and result of calculation
+    @Override
+    public String calculateArea() {
+        return "";
+    }
+
+    // Method returns just raw double number as result of calculation
+    @Override
+    public double calculatePerimeter() {
+        return 0;
     }
 }
 
-
+// The class inherits from Figures class and override methods
 class Circle extends Figures {
     double radius;
 
@@ -38,8 +34,9 @@ class Circle extends Figures {
     }
 
     @Override
-    public double calculateArea() {
-        return Math.PI * radius * radius;
+    public String calculateArea() {
+        return "Area of a circle with radius " + radius + " is equal " + Math.PI * radius * radius;
+
     }
 
     @Override
@@ -48,6 +45,7 @@ class Circle extends Figures {
     }
 }
 
+// The class inherits from Figures class and override methods
 class Square extends Figures {
     double side;
 
@@ -56,12 +54,18 @@ class Square extends Figures {
     }
 
     @Override
-    public double calculateArea() {
-        return side * side;
+    public String calculateArea() {
+        return "Area of a circle with side " + side + " is equal " + side * side;
     }
 
     @Override
     public double calculatePerimeter() {
         return side * 4;
     }
+}
+
+interface Shape {
+    String calculateArea();
+
+    double calculatePerimeter();
 }
