@@ -2,18 +2,33 @@ package com.syntax.homework;
 
 public class Draft3 {
 
-    public static void main(String args[]) {
-        int[] a = {12, 15, 11, 13, 9, 25};
-        int[] a2 = {12, 15, 11, 13, 9, 25};
-        int sum = 0;
-        for (int i = 0; i < a.length; i++) {
-            if (a[i] % 2 == a2[i] % 5) {
-                sum += i * i;
-            }
-        }
-        System.out.println("sum = " + sum);
+}
+class Main {
+
+    public static void main (String []args) {
+        EncapsulationDemo main =new EncapsulationDemo();
+        main.setEmpName("John");
+        main.setEmpAge(30);
+        System.out.println("Employee Name: "+main.getEmpName());
+        System.out.println("Employee Age: "+main.getEmpAge());
     }
 
 }
+class EncapsulationDemo {
+    private String empName;
+    private int empAge;
 
+    public void setEmpName (String empName) {
+        this.empName=empName;
+    }
+    public void setEmpAge (int empAge) {
+        this.empAge=empAge;
+    }
+    public String getEmpName () {
+        return empName;
+    }
+    public int getEmpAge () {
+        return empAge;
+    }
 
+}
