@@ -66,3 +66,17 @@ class StudentB extends Students {
         return (math + history + coding + chemistry) / 4;
     }
 }
+/*
+class StudentA extends Marks{
+    StudentA(double...marks){
+    this.marks=marks;
+}
+    @Override
+    double getPercentage() {
+    double sum = 0;
+    for(double x:marks){
+        sum+=x;
+    }
+    double Percentage=sum/marks.length;
+        return Percentage;
+ */

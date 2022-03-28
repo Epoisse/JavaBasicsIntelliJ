@@ -35,7 +35,7 @@ class Circle extends Figures {
 
     @Override
     public String calculateArea() {
-        return "Area of a circle with radius " + radius + " is equal " + Math.PI * radius * radius;
+        return "Area of a circle with radius " + radius + " is equal " + Math.PI * Math.pow(radius,2);
 
     }
 
