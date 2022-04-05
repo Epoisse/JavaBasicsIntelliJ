@@ -1,6 +1,12 @@
 package com.syntax.homework;
 
 public class Student {
+    String studentID;
+
+    public Student(String studentID) {
+        this.studentID = studentID;
+    }
+
     void lectures() {
         System.out.println("Student participates in lectures");
     }
@@ -16,6 +22,10 @@ public class Student {
 }
 
 class SyntaxStudent extends Student {
+    public SyntaxStudent(String studentID) {
+        super(studentID);
+    }
+
     @Override
     void assignment() {
         System.out.println("Syntax student don't have time to sleep because of amount of assignment");
@@ -32,6 +42,10 @@ class SyntaxStudent extends Student {
 }
 
 class CollegeStudent extends Student {
+    public CollegeStudent(String studentID) {
+        super(studentID);
+    }
+
     @Override
     void assignment() {
         System.out.println("College student has match more assignment than School student");
@@ -48,6 +62,10 @@ class CollegeStudent extends Student {
 }
 
 class SchoolStudent extends Student {
+    public SchoolStudent(String studentID) {
+        super(studentID);
+    }
+
     @Override
     void assignment() {
         System.out.println("School student doesn't get assignment until 5 grade");
