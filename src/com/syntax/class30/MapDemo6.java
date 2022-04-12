@@ -12,6 +12,7 @@ public class MapDemo6 {
         fruit.put("Kiwi", 203.0);
         fruit.put("Orange", 26.0);
         fruit.put("Mango", 25.0);
+        fruit.put("Peach", 23.0);
 
 
         System.out.println(fruit.keySet());
