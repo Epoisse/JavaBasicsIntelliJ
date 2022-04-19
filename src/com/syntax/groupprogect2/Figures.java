@@ -1,4 +1,4 @@
-package com.syntax.groupProgect2;
+package com.syntax.groupprogect2;
 
 // Parent class for all types of figures
 public class Figures implements Shape {

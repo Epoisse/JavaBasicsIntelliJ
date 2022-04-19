@@ -1,0 +1,26 @@
+
+
+List should be used when we have to store single element as a collection
+1. maintain the order
+2. allows duplicated
+3. they are dynamic in size
+
+ArrayList
+When most of the operations(70-80%) are storing new data at the end of the list
+and reading data no manipulation of data
+
+LinkedList
+When most of the operations are storing new data in-between or at the start of the list
+then we should go with the linkedList
+
+Sets
+ No duplicates
+
+HashSet
+does not maintain the order
+the fastest for retrieval and retrieval
+
+LinkedHashSet
+maintain insertion order
+insertion is slower than HashSet but faster than TreeSet
+retrieval is slowest

@@ -1,4 +1,4 @@
-package com.syntax.groupProgect2;
+package com.syntax.groupprogect2;
 
 public class BrowsersTest implements RemoteWebDriver {
     // parent class for all browsers classes

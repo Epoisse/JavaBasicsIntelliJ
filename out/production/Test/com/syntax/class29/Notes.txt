@@ -28,3 +28,7 @@ TreeSet:
     LinkedHashSet              vs   TreeSet
     Insertion is not slow           Slowest insertion
     Retrieval is super slow         Retrieval is moderated (Slower than HashSet but faster Linked)
+
+HashTable
+    - thread safe data means it can handle multiple insertions and retrievals at the same
+    time from multiple CPU cores but because of thread safety feature it is also very slows

@@ -10,38 +10,22 @@ import java.io.IOException;
 import java.util.*;
 
 public class Draft3 {
-    public static void main(String[] args) throws IOException {
-        String path = "/Users/sebvettal/Desktop/SWJiraFeb-Sep22.xlsx";
-        FileInputStream fis = new FileInputStream(path);
-        XSSFWorkbook xssfWorkbook = new XSSFWorkbook(fis);
-        Sheet sheet = xssfWorkbook.getSheetAt(0);
+    public static void main(String[] args) {
+        int start = 0;
+        int end = 0;
+        for (int i = 0; i < 30; i++) {
+            Random random = new Random();
+            int roll = 1 + random.nextInt(6);
+            start %= 40;
+            end = start + roll;
+            end %= 40;
 
-        List<Map<String, String>> excelData = new ArrayList<>();
-        Row headerRow = sheet.getRow(1);
-        for (int i = 2; i < sheet.getPhysicalNumberOfRows(); i++) {
-            Row row = sheet.getRow(i);
-            LinkedHashMap<String, String> linkedHashMap = new LinkedHashMap<>();
-            for (int j = 0; j < 2; j++) {
-                Cell headerCell = headerRow.getCell(j);
-                Cell bodyCell = row.getCell(j);
-                linkedHashMap.put(headerCell.toString(), bodyCell.toString());
-            }
-            excelData.add(linkedHashMap);
+            System.out.print("start=" + start);
+            System.out.print(" roll=" + roll);
+            System.out.print(" end=" + end);
+
+            start = end;
+            System.out.println();
         }
-
-        System.out.println(excelData.size());
-        System.out.println(excelData.get(0));
-        Map<String, String> hashMap = excelData.get(0);
-        Set<String> keys = hashMap.keySet();
-        Collection<String> values = hashMap.values();
-        for (String key :
-                keys) {
-            System.out.println(key);
-        }
-        for (String value : values) {
-            System.out.println(value);
-        }
-
-
     }
 }
