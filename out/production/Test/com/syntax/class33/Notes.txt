@@ -1,3 +1,0 @@
-
-Exceptions in java
- is an unwanted behaviour that disrupts the normal flow

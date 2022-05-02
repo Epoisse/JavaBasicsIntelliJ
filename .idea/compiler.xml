@@ -4,5 +4,16 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/.." includeSubdirectories="false" />
     </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Test" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Test" target="8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
