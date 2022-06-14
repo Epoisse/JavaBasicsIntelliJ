@@ -4,12 +4,12 @@ import java.util.List;
 
 public class FindTheLargestEvenLengthString {
     public static void main(String[] args) {
-        String input = "I was";
+        String input = "I am very Good at Java";
         System.out.println(findMaxLenEven(input));
     }
 
     public static String findMaxLenEven(String str) {
-        String maxLen = "-1";
+        String maxLen = "";
 
         String[] array = str.split(" ");
         for (String s :

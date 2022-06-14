@@ -10,6 +10,8 @@ public class Draft2 {
     Double obj1=new Double(10);
 
         System.out.println(obj.compareTo(obj1));
+        System.out.println("jsajfojfos");
+        System.out.println("sflajfso");
 
     }
 }

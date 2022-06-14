@@ -1,9 +1,6 @@
-package com.syntax.homework;
+package com.syntax.interviewtasks;
 
-import java.util.*;
-
-public class Main {
-
+public class LongestCommonPrefix {
     public static String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) return "";
         String prefix = strs[0];
@@ -20,4 +17,3 @@ public class Main {
         System.out.println(longestCommonPrefix(strs));
     }
 }
-

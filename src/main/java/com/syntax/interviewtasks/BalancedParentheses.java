@@ -16,7 +16,7 @@ public class BalancedParentheses {
 
     public static boolean isBalancedJohnEdition(String s) {
 
-        int openBracket = s.replace(")", "").length();
+        int openBracket = s.replace(')', ' ').length();
         int closeBracket = s.replace("(", "").length();
         return  (openBracket == closeBracket);
     }

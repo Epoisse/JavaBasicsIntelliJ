@@ -14,15 +14,15 @@ public class PrefixCount {
 
     public static List<Integer> countOnlyPrefixes(List<String> names, List<String> query) {
         List<Integer> counterList = new ArrayList<>();
-        int counter = 0;
+
         for (String s : query) {
+            int counter = 0;
             for (String name : names) {
                 if (!s.equals(name) && name.contains(s)) {
                     counter++;
                 }
             }
             counterList.add(counter);
-            counter = 0;
         }
         return counterList;
     }
